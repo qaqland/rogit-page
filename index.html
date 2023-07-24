@@ -8,9 +8,9 @@
 </head>
 
 <body>
-	<div class="container mx-auto max-w-screen-md font-mono">
+	<div class=" font-mono ">
 		<!-- 标题行 -->
-		<div class="flex justify-between text-slate-950 font-semibold items-center my-4 py-3 px-4  rounded border-b">
+		<div class="flex justify-between text-slate-950 font-semibold items-center my-4 px-4 container mx-auto max-w-screen-md">
 			<div class="flex items-center space-x-4">
 				<div class="  px-2  ">rogit</div>
 				<div class="  px-2  ">main</div>
@@ -20,93 +20,113 @@
 				<div class="  px-2 ">code</div>
 			</div>
 		</div>
+        <hr class="h-px my-3 bg-gray-200 border-0 dark:bg-gray-700 w-full">
 		<!-- 最近更新 -->
-		<div class="flex justify-between text-slate-900 items-center mt-6 py-3 px-4 bg-slate-100 rounded">
+		<div class="container mx-auto max-w-screen-md flex justify-between text-slate-900 items-center mt-6 py-3 px-4 bg-slate-100 rounded">
 			<div class="flex items-center w-1/2">
-				<div class="px-2 ">Initial comit</div>
+				<div class="px-2 ">Initial commit</div>
 			</div>
 			<div class="flex space-x-4 items-center">
-				<div class="px-2 ">qaqland</div>
-				<div class="px-2 ">2021-10-10</div>
-				<div class="flex  w-20 justify-end">
-					<div class="px-2 hover:underline">shr84nf0</div>
+				<div class="text-center  w-20">qaqland</div>
+				<div class="text-center w-32">2021-10-10</div>
+				<div class="flex justify-end">
+					<div class="text-center hover:underline w-24">shr84nf0</div>
 				</div>
 			</div>
 		</div>
 		<!-- 状态栏 -->
-		<div class="flex justify-between text-slate-900 items-center mt-4 mb-2 mx-4">
-			<div class="">
-				<ul class="flex items-center text-base space-x-0.5 text-slate-500">
-					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-						stroke="currentColor" class="w-5 h-5 mr-1">
-						<path stroke-linecap="round" stroke-linejoin="round"
-							d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-					</svg>
-					<!-- [&:not(:last-child)]:after:content-['/'] -->
-					<li class="px-0 py-0.5 [&:not(:last-child)]:after:content-['>'] last:text-slate-900">src</li>
-					<li class="px-0 py-0.5 [&:not(:last-child)]:after:content-['>'] last:text-slate-900">lib</li>
-					<li class="px-0 py-0.5 [&:not(:last-child)]:after:content-['>'] last:text-slate-900">main.rs</li>
-				</ul>
-			</div>
-			<div class="flex space-x-4 items-center">
+		<div class="container mx-auto max-w-screen-md flex justify-between text-slate-900 items-center mt-4 mb-3 px-4">
+            <nav class="">
+                <ol class="flex">
+                  <li>
+                    <a
+                      href="#"
+                      class=" transition duration-150"
+                      >src</a
+                    >
+                  </li>
+                  <li>
+                    <span class="mx-2 font-bold text-neutral-500 dark:text-neutral-400">/</span>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class=" transition duration-150  "
+                      >lib</a
+                    >
+                  </li>
+                  <li>
+                    <span class="mx-2 font-bold text-neutral-500 dark:text-neutral-400">/</span>
+                  </li>
+                  <li class="text-neutral-500 dark:text-neutral-400">main.rs</li>
+                </ol>
+              </nav>
+  
+			<div class="flex space-x-2 items-center">
 				<div class="px-2  bg-slate-100 py-1 rounded">blame</div>
 				<div class="px-2  bg-slate-100 py-1 rounded">raw</div>
 				<div class="px-2  bg-slate-100 py-1 rounded">permalink</div>
-				<div class="px-2  bg-slate-200 py-1 rounded">log</div>
+				<div class="px-2  bg-slate-100 py-1 rounded">log</div>
 			</div>
 		</div>
 		<!-- 文件树 -->
-		<div class="rounded border divide-y ">
-			<div class="flex justify-between text-slate-900 items-center py-2 px-4 ">
-				<div class="flex items-center w-1/2">
-					<div class="px-2 ">Name</div>
+		<div class="container mx-auto max-w-screen-md rounded  divide-y border ">
+			<div class="flex justify-between text-slate-900 items-center py-1.5 px-4 font-semibold">
+				<div class="flex items-center w-1/2 ">
+					<div class="px-4 ">Name</div>
 				</div>
-				<div class="flex space-x-4 items-center">
-					<div class="px-2 ">Size</div>
-					<div class="px-2 ">Last update</div>
-					<div class="flex  w-20 justify-end">
-						<div class="px-2 hover:underline">Views</div>
+				<div class="flex space-x-4 items-center ">
+					<div class="text-center  w-20">Size</div>
+					<div class="text-center w-32">Last update</div>
+					<div class="flex  justify-center ">
+						<div class="text-center hover:underline w-24">Views</div>
 					</div>
 				</div>
 			</div>
-			<div class="flex justify-between text-slate-900 items-center py-2 px-4 ">
+			<div class="flex justify-between text-slate-900 items-center py-1.5 px-4 hover:bg-slate-50">
 				<div class="flex items-center w-1/2">
-					<div class="px-2 ">..</div>
+					<div class="px-4">..</div>
 				</div>
 				<div class="flex space-x-4 items-center">
 					<div class="px-2 "></div>
 					<div class="px-2 "></div>
-					<div class="flex  w-20 justify-end">
+					<div class="flex  w-24 justify-end">
 						<div class="px-2 hover:underline"></div>
 					</div>
 				</div>
 			</div>
-			<div class="flex justify-between text-slate-900 items-center py-2 px-4 ">
+			<div class="flex justify-between text-slate-900 items-center py-1.5 px-4 hover:bg-slate-50">
 				<div class="flex items-center w-1/2">
-					<div class="px-2 ">docs/</div>
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M157.694-180.001q-23.529 0-40.611-17.347-17.082-17.346-17.082-40.346v-484.612q0-23 17.082-40.346 17.082-17.347 40.611-17.347h249.459l65.385 65.385h329.768q23 0 40.346 17.347 17.347 17.346 17.347 40.346v419.227q0 23-17.347 40.346-17.346 17.347-40.346 17.347H157.694Zm0-45.384h644.612q5.385 0 8.847-3.462 3.462-3.462 3.462-8.847v-419.227q0-5.385-3.462-8.847-3.462-3.462-8.847-3.462H454.077l-65.385-65.385H157.694q-5.385 0-8.847 3.462-3.462 3.462-3.462 8.847v484.612q0 5.385 3.462 8.847 3.462 3.462 8.847 3.462Zm-12.309 0v-509.23V-225.385Z"/></svg>
+					<div class="px-1.5 ">docs</div>
 				</div>
 				<div class="flex space-x-4 items-center">
 					<div class="px-2 "></div>
-					<div class="px-2 ">2021-10-10</div>
-					<div class="flex  w-20 justify-end">
+					<div class="text-center w-32 ">2021-10-10</div>
+					<div class="flex  w-24 justify-end">
 						<div class="px-2 hover:underline">log</div>
 					</div>
 				</div>
 			</div>
 			<!-- even:bg-slate-100 odd:bg-white -->
-			<div class="flex justify-between text-slate-900 items-center py-2 px-4 ">
+			<div class="flex justify-between text-slate-900 items-center py-1.5 px-4 hover:bg-slate-50">
 				<div class="flex items-center w-1/2">
-					<div class="px-2 ">run*</div>
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M287.77-289.385h256.537v-45.384H287.77v45.384Zm0-167.923h384.46v-45.384H287.77v45.384Zm0-167.923h384.46v-45.384H287.77v45.384Zm-90.076 485.23q-23.529 0-40.611-17.082-17.082-17.082-17.082-40.611v-564.612q0-23.529 17.082-40.611 17.082-17.082 40.611-17.082h564.612q23.529 0 40.611 17.082 17.082 17.082 17.082 40.611v564.612q0 23.529-17.082 40.611-17.082 17.082-40.611 17.082H197.694Zm0-45.384h564.612q4.616 0 8.463-3.846 3.846-3.847 3.846-8.463v-564.612q0-4.616-3.846-8.463-3.847-3.846-8.463-3.846H197.694q-4.616 0-8.463 3.846-3.846 3.847-3.846 8.463v564.612q0 4.616 3.846 8.463 3.847 3.846 8.463 3.846Zm-12.309-589.23V-185.385-774.615Z"/></svg>
+                    <div class="px-1.5 ">run*</div>
 				</div>
-				<div class="flex space-x-4 items-center">
-					<div class="px-2 ">10KB</div>
-					<div class="px-2 ">2021-10-10</div>
-					<div class="flex w-20 justify-end">
-						<div class="px-2 hover:underline">raw</div>
+				<div class="flex space-x-4 items-center ">
+					<div class="text-center  w-20">10KB</div>
+					<div class="text-center  w-32">2021-10-10</div>
+					<div class="flex w-24 justify-end ">
+						<div class=" hover:underline">raw</div>
 						<div class="px-2 hover:underline">log</div>
 					</div>
 				</div>
 			</div>
+		</div>
+        <hr class="h-px mt-7 bg-gray-200 border-0 dark:bg-gray-700 w-full mx-auto">
+        <div class="flex justify-center text-sm text-slate-600 font-medium items-center py-2 ">
+generated by rogit v0.0.1 at 2023-07-24 15:24:55 +0000
 		</div>
 	</div>
 </body>
